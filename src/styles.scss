@@ -5,8 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./assets/scss/_button.sass";
-@import "./assets/scss/_form.sass";
+@import "./assets/scss/_button.scss";
+@import "./assets/scss/_form.scss";
 
 body{
     font-family: "Roboto", sans-serif;
