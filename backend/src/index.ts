@@ -3,13 +3,14 @@ import mongoose from 'mongoose';
 import router from './routes/route';
 import dotenv from 'dotenv';
 import { PORT, MONGO_URI} from './config';
+import cors from 'cors';
 
 
 dotenv.config({ path: `../../.env` })
 
 const app = express();
 app.use(express.json());
-
+app.use(cors())
 mongoose
 .connect(MONGO_URI || '', {
     dbName: 'message-app',
